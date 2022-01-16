@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+nav{
+display: flex;
+justify-content: space-between;
+width: 100%;
+padding: 1em 10em;
+height: auto 0;
+}
+.logo{
+    font-family: fantasy;
+    color: #fff;
+    font-size: 2em;
+    color: #ffc602;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-weight: 1000;
+}
+.accounts{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.login,.signup{
+    margin-left: 1em;
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: .8em;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    background: rgba(0,0,0, 0.5);
+}
+.login{
+    color:#ffc602;
+    border-color: #ffc602;
+    border: none;
+}
+.login:hover{
+    background-color: #ffc602;
+    color: #333;
+}
+.signup{
+    border: solid 2px #ffc602;
+    color: #ffc602;
+}
+.signup:hover{
+    background-color: #ffc602;
+    color: #333;
+}
+header{
+    background: rgba(0,0,0, 0.6)url('bg.jpg');
+    background-size: cover;
+    height: 100vh;
+    background-blend-mode: darken;
+    background-position: center;
+    padding: 30px;
+}
+.header-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+    color: #fff;
+}
+h1{
+    font-size: 5em;
+}
+h1,p{
+   margin: 0.2em; 
+}
+.sub{
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 500;
+}
+.search{
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-top: 3em;
+    padding: .8em;
+    width: 30em;
+    border-radius: 50px;
+    outline: none;
+    font-style: italic;
+}
+.movies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #000;
+    
+}
+.movie-container{
+    background-color: #000;
+    color: #fff;
+}
+.movie-title-header{
+    font-weight: 600;
+    font-size: 2em;
+    letter-spacing: 1px;
+    padding: .5em;
+    margin: 2em 3em;
+    border-left: 4px solid #ffc602;
+}
+.movies img{
+    width: 15em;
+    height: 25em;
+}
+.movies li{
+    cursor: pointer;
+    list-style: none;
+    padding: 1em;
+    margin: 1.5em;
+    background: rgba(255,255,255, 0.1);
+    font-size: 1em;
+    box-shadow:0 5px 10px rgba(0,0,0, 0.1) ;
+}
+.movies h3{
+    color:grey;
+    font-weight: 700;
+    padding: 0.3em 0 ;
+}
+.movies h2{
+    color: #fff;
+    padding: 0.2em 0;
+}
+.see-more{
+    text-align: center;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin: 1.5em;
+}
+.membership{
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 8em 5em;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.title-membership{
+    color: #fff;
+    font-size:1.3em; 
+    margin: 1em;
+}
+.input-membership{
+    width: 25em;
+    padding: .8em;
+    font-size: 1em;
+    outline: none;
+    border-radius: 5px;
+}
+.spam{
+    padding-top: 0.3em;
+    font-size: 1em;
+    color: gainsboro;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+}
+i{
+    cursor: pointer;
+    color: #fff;
+    margin: 1em .3em;
+    background-color: #333333;
+    padding: .3em;
+    border-radius: 50%;
+}
+.copyright{
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+/**/
+@media only screen and (max-width: 900px) {
+    nav{
+        padding: 1em 3em;
+    }
+    .search{
+        width: 23em;
+        font-size: 1;
+    }
+    .movie-title-header{
+        margin: 2em;
+    }
+    .see-more{
+        font-size: 1.2;
+    }
+}
+@media only screen and (max-width: 800px) {
+    h1{
+        font-size: 4em;
+    }
+}
+@media only screen and (max-width: 700px) {
+    h1{
+        font-size: 4em;
+    }
+    .sub{
+        font-size: 1.2em;
+    }
+    .search{
+        width: 25em;
+        font-size: 1em;
+    }
+}
+@media only screen and (max-width: 600px) {
+    h1{
+        font-size: 3em;
+    }
+    .sub{
+        font-size: 1.1em;
+    }
+    .movie-title-header{
+        font-size: 1.5em;
+    }
+    .see-more{
+        font-size: 1em;
+    }
+}
+
+
