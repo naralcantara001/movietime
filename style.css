@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+nav{
+display: flex;
+justify-content: space-between;
+width: 100%;
+padding: 3% 10% 0 10% ;
+height: auto 0;
+}
+.logo{
+    font-family: fantasy;
+    color: #fff;
+    font-size: 2em;
+    color: #ffc602;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-weight: 1000;
+}
+.accounts{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.login,.signup{
+    margin-left: 1em;
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: .8em;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    background: rgba(0,0,0, 0.5);
+}
+.login{
+    color:#ffc602;
+    border-color: #ffc602;
+    border: none;
+}
+.login:hover{
+    background-color: #ffc602;
+    color: #333;
+}
+.signup{
+    border: solid 2px #ffc602;
+    color: #ffc602;
+}
+.signup:hover{
+    background-color: #ffc602;
+    color: #333;
+}
+header{
+    background: rgba(0,0,0, 0.6)url('bg.jpg');
+    background-size: cover;
+    height: 100vh;
+    background-blend-mode: darken;
+    background-position: center;
+    padding: 30px;
+}
+.header-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 70vh;
+    color: #fff;
+}
+h1{
+    font-size: 5em;
+}
+h1,p{
+   margin: 0.2em; 
+}
+.sub{
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 500;
+}
+.search{
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-top: 3em;
+    padding: .8em;
+    width: 40%;
+    border-radius: 50px;
+    outline: none;
+    font-style: italic;
+    border: none;
+}
+.movies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #000;
+    
+}
+.movie-container{
+    background-color: #000;
+    color: #fff;
+    padding: 0 10%;
+}
+.movie-title-header{
+    font-weight: 600;
+    font-size: 2em;
+    letter-spacing: 1px;
+    padding: 2%;
+    margin: 10% 5%;
+    border-left: 4px solid #ffc602;
+}
+.movies img{
+    width: 13em;
+    height: 22em;
+}
+.movies li{
+    cursor: pointer;
+    list-style: none;
+    padding: 1em;
+    margin: 1.5em;
+    background: rgba(255,255,255, 0.1);
+    font-size: 1em;
+    box-shadow:0 5px 10px rgba(0,0,0, 0.1) ;
+}
+.movies h3{
+    color:grey;
+    font-weight: 700;
+    padding: 0.3em 0 ;
+}
+.movies h2{
+    color: #fff;
+    padding: 0.2em 0;
+}
+.see-more{
+    text-align: center;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin: 1.5em;
+}
+.membership{
+    background-color: #111;
+    display: flex;
+    font-size:1em;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 8em 5em;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.title-membership{
+    color: #fff;
+    font-size:1.3em; 
+    margin: 1em;
+}
+.input-membership{
+    width:30%;
+    padding: .8em;
+    font-size: 1em;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+.submit{
+    text-align: center;
+    font-size: 1.2em;
+    background-color: red;
+    padding: .5em 1em;
+    border-radius: 4px;
+    margin: 1%;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+.submit:hover{
+    border-color: red;
+    background-color: #111;
+    color: #fff;
+    letter-spacing: 1px;    
+}
+.spam{
+    font-size: 1em;
+    color: gainsboro;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+}
+i{
+    cursor: pointer;
+    color: #fff;
+    margin: 1em .3em;
+    background-color: #333333;
+    padding: .3em;
+    border-radius: 50%;
+}
+.fa{
+    color: #ffc602;
+    margin: 2% 1%;
+}
+.copyright{
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+/**/
+@media only screen and (max-width: 1000px) {
+    nav{
+        padding: 3% 10% 0 10% ;
+    }
+    .search{
+        width: 70%;
+    }
+  
+}
+@media only screen and (max-width: 700px) {
+   h1{
+       font-size: 4em;
+   }
+   .movie-title-header{
+       margin: 7%;
+   }
+   .input-membership{
+       width: 60%;
+   }
+}
+@media only screen and (max-width: 600px) {
+    h1{
+        font-size: 3.5em;
+    }
+    .sub{
+        font-size: 1.3em;
+    }
+    footer{
+        padding: 10%;
+        flex-direction: column;
+    }
+ }
+ @media only screen and (max-width: 500px) {
+    nav{
+        padding: 5%;
+    }
+    .search{
+        width: 80%;
+    }
+    .input-membership{
+        width: 80%;
+    }
+    .membership{
+        font-size: .8em;
+    }
+    .see-more{
+        font-size: .7em;
+    }
+
+ }
+ @media only screen and (max-width: 400px) {
+    nav{
+        padding: 3%;
+    }
+    h1{
+        font-size: 2em;
+    }
+    .sub{
+        font-size: 1em;
+    }
+    .search{
+        width: 90%;
+    }
+    .movie-title-header{
+        margin: 10%;
+        font-size: 1.5em;
+    }
+    .input-membership{
+        width: 90%;
+    }
+    .membership{
+        background-color: #111;
+        display: flex;
+        font-size: .8em;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 15%;
+        color: #fff;
+        letter-spacing: 1px;
+    }
+    .copyright{
+        font-size: .8em
+    }
+ }
+ @media only screen and (max-width: 300px) {
+    .accounts{
+        font-size: .6em;
+    }
+    .login{
+        padding: 1.5em;
+    }
+    nav{
+        padding: 1%;
+    }
+    .sub{
+        font-size: 1em;
+    }
+    .search{
+        width: 90%;
+        font-size: 1em;
+    }
+    .movie-title-header{
+        font-size: 1em
+    }
+    .movies img{
+        width: 13em;
+        height: 22em;
+    }
+    .membership{
+        font-size: .5em;
+        padding: 15%;
+    }
+    .input-membership{
+        width: 80%;
+    }
+    .fa{
+        font-size: .4em;
+    }
+    .copyright{
+        font-size: .5em
+    }
+ }
+ @media only screen and (max-width: 320px) {
+    .logo{
+        font-size: 1.5em;
+    }
+    .login, .signup{
+        font-size: .5em;
+    }
+    .search{
+        font-size: .8em;
+    }
+    .movie-title-header{
+        font-size: 1em;
+        margin: 10% 5%;
+    }
+    .see-more{
+        font-size: .8em;
+    }
+ }
+ @media only screen and (max-width: 250px) {
+    .logo{
+        font-size: .8em;
+    }
+    .nav{
+        padding: 1%;
+    }
+    .login, .signup{
+        font-size: .2em;
+        padding: 3em;
+        margin: 1em;
+    }
+    h1{
+        font-size: 1em;
+    }
+    .sub{
+        font-size: .6em;
+    }
+    .search{
+        width: 90%;
+        font-size: .5em;
+    }
+    .movie-title-header{
+        margin: 10% 3%;
+        font-size: .5em;
+    }
+    .movies img{
+        width: 15em;
+        height: 20em;
+    }
+    .movies li{
+        cursor: pointer;
+        list-style: none;
+        padding: .8em;
+        margin: 1.5em;
+        font-size: .6em;
+     }
+     .see-more{
+         font-size: .5em;
+     }
+     .membership{
+         font-size: .3em;
+     }
+ }
